@@ -1,0 +1,29 @@
+{
+  "name": "babel_webpack_starter",
+  "homepage": "https://my-json-server.typicode.com/nilloc95/cookbook_JSON_SERVER/api",
+  "version": "1.0.0",
+  "description": "Starter pack for compiling ES6+ apps to ES5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
+    "build": "webpack --mode production --progress",
+    "json:server": "json-server --watch api/db.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Collin Gilmore",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
