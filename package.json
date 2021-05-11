@@ -1,0 +1,24 @@
+{
+  "name": "json_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilloc95/cookbook_JSON_SERVER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nilloc95/cookbook_JSON_SERVER/issues"
+  },
+  "homepage": "https://github.com/nilloc95/cookbook_JSON_SERVER#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
